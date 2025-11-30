@@ -19,6 +19,7 @@ $(document).ready(function(){
         $(this).addClass('active')
     });
 
+    //ancla al inicio
     $('#scrollToTop').on('click',function(event){
         event.preventDefault();
         $('html, body').animate({
@@ -26,4 +27,9 @@ $(document).ready(function(){
         }, 800);
     });
 
+    //boton volver
+    $('#backButton').on('click', function(event) {
+        event.preventDefault();
+        window.history.back();
+    });
 });
