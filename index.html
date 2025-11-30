@@ -20,17 +20,17 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">Home </a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-filtro-btn active" href="#" data-filter="todos">Home </a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Dogos </a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-filtro-btn" href="#" data-filter="dogos">Dogos </a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Gatos </a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-filtro-btn" href="#" data-filter="gatos">Gatos </a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Bribs </a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-filtro-btn" href="#" data-filter="birbs">Bribs </a>
                     </li>
                     <!--
                     <li class="nav-item dropdown">
@@ -68,7 +68,7 @@
 <!-- listar los productos en tarjetas, tener botones para comprar, link a carro de compras-->
     <div class="container-fluid d-block d-md-flex flex-wrap align-items-center justify-content-md-center border-bottom mt-3">
 
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
+        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item" data-categoria="dogos">
             <img src="assets/IMG/dogos/dogos_chems.jpeg" alt="dogos_chems" class="img-uniform mb-3 mx-auto">
             <h3 class="h5">Chems</h3>
             <p class="text-mutted">$precio</p>
@@ -76,7 +76,7 @@
             <a href="#" class="btn btn-outline-success w-100">Detalles</a>
         </div>
         
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
+        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item" data-categoria="gatos">
             <img src="assets/IMG/gatos/gato_ensalada.jpeg" alt="gato_ensalada" class="img-uniform mb-3 mx-auto">
             <h3 class="h5">Salad Cat</h3>
             <p class="text-mutted">$precio</p>
@@ -84,7 +84,7 @@
             <a href="#" class="btn btn-outline-success w-100">Detalles</a>
         </div>
 
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
+        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item" data-categoria="birbs">
             <img src="assets/IMG/birbs/birb_borb.jpeg" alt="birb_borb" class="img-uniform mb-3 mx-auto">
             <h3 class="h5">Borb</h3>
             <p class="text-mutted">$precio</p>
