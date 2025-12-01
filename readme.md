@@ -1,5 +1,7 @@
-El precente proyecto corresponde al desarrollo front-end de un e-comerce llamado "Meme Store", el cual esta separado en tres repositorios:
-Repositorio 1 (1/3):
+Repositorio 1 (1/3): interfaz_principal
+
+El precente proyecto corresponde al desarrollo front-end de un e-comerce llamado "Meme Store", el cual esta separado en tres repositorios.
+
 Este repositorio alberga la página principal (index.html) donde Bootstrap y Jquery son utilizados a traves de CDN. Tambien contiene la carpeta assets, que centraliza:
 -assets/IMG: Todas las imágenes e iconos utilizados.
 -assets/CSS: Hoja de estilo CSS (styles.css).
