@@ -47,9 +47,10 @@ $(document).ready(function(){
 //agregar carrito btn
     $('.add-to-cart-btn').on('click', function(e) {
         e.preventDefault();
+        
         var productId = $(this).data('product-id');
         var productPrice = $(this).data('product-price');
-        var productName = $(this).siblings('h3.h5').text();
+        var productName = $(this).data('product-name');
 
         if (cart[productId]) {
             cart[productId].quantity++;
@@ -111,5 +112,27 @@ $(document).ready(function(){
     if ($('#cart-details-container').length) {
         displayCart();
     }
+
+    //finalizar compra
+    $('#finalize-purchase-btn').on('click', function() {
+        $('#cart-details-container').html(
+            '<div class="alert alert-info" role="alert">' +
+            '<strong>¡Buuu, no funcionó!</strong>' +
+            '</div>'
+        );
+        $('#cart-summary').hide();
+
+        //duracion alert
+        localStorage.removeItem('shoppingCart');
+        cart = {};
+        updateCartCounter();
+        setTimeout(function() {
+            displayCart();
+        }, 2000);
+
+        $('html, body').animate({
+            scrollTop: $('#cart-details-container').offset().top - 20
+        }, 800)
+    });
 
 });
