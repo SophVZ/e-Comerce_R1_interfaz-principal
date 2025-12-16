@@ -12,7 +12,7 @@
 <body>
 <header>
 <!--barra de navegación y links para navegar por la página-->
-    <nav class="navbar navbar-expand-sm bg-custom-color">
+    <nav class="navbar navbar-expand-sm navbar--verde">
         <div class="container-fluid">
             <a class="navbar-brand"> Meme Store </a>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,24 +68,24 @@
 <!-- listar los productos en tarjetas, tener botones para comprar, link a carro de compras-->
     <div class="container-fluid d-block d-md-flex flex-wrap align-items-center justify-content-md-center border-bottom mt-3">
 
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item" data-categoria="dogos">
-            <img src="assets/IMG/dogos/dogos_chems.jpeg" alt="dogos_chems" class="img-uniform mb-3 mx-auto">
+        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item tarjeta" data-categoria="dogos">
+            <img src="assets/IMG/dogos/dogos_chems.jpeg" alt="dogos_chems" class="tarjeta__imagen mb-3 mx-auto">
             <h3 class="h5">Cheems</h3>
             <p class="text-mutted">$500 brc</p>
             <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-dogos-chems" data-product-price="500" data-product-name="Cheems">Comprar</a>
             <a href="../pages_productos/dogos/dogos_chems.html" class="btn btn-outline-success w-100">Detalles</a>
         </div>
         
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item" data-categoria="gatos">
-            <img src="assets/IMG/gatos/gato_ensalada.jpeg" alt="gato_ensalada" class="img-uniform mb-3 mx-auto">
+        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item tarjeta" data-categoria="gatos">
+            <img src="assets/IMG/gatos/gato_ensalada.jpeg" alt="gato_ensalada" class="tarjeta__imagen mb-3 mx-auto">
             <h3 class="h5">Salad Cat</h3>
             <p class="text-mutted">$250 brc</p>
             <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-gatos-salad" data-product-price="250" data-product-name="Salad cat">Comprar</a>
             <a href="../pages_productos/gatos/gatos_ensalada.html" class="btn btn-outline-success w-100">Detalles</a>
         </div>
 
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item" data-categoria="birbs">
-            <img src="assets/IMG/birbs/birb_borb.jpeg" alt="birb_borb" class="img-uniform mb-3 mx-auto">
+        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item tarjeta" data-categoria="birbs">
+            <img src="assets/IMG/birbs/birb_borb.jpeg" alt="birb_borb" class="tarjeta__imagen mb-3 mx-auto">
             <h3 class="h5">Bird, birb, borb</h3>
             <p class="text-mutted">$100 brc</p>
             <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-birbs-borb" data-product-price="100" data-product-name="Bird, birb, borb">Comprar</a>
@@ -94,7 +94,7 @@
 
         <!--
         <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
-            <img src="assets/IMG/shrimp/shrimp_escoliosis.jpeg" alt="shrimp" class="img-uniform mb-3 mx-auto">
+            <img src="assets/IMG/shrimp/shrimp_escoliosis.jpeg" alt="shrimp" class="tarjeta__imagen mb-3 mx-auto">
             <h3 class="h5">nombre product</h3>
             <p class="text-mutted">$precio</p>
             <a href="#" class="btn btn-success w-100 mb-2">Comprar</a>
@@ -102,7 +102,7 @@
         </div>
 
         <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
-            <img src="assets/IMG/sea_doggo/seadoggo_o-o.jpeg" alt="seadoggo_o-o" class="img-uniform mb-3 mx-auto">
+            <img src="assets/IMG/sea_doggo/seadoggo_o-o.jpeg" alt="seadoggo_o-o" class="tarjeta__imagen mb-3 mx-auto">
             <h3 class="h5">nombre product</h3>
             <p class="text-mutted">$precio</p>
             <a href="#" class="btn btn-success w-100 mb-2">Comprar</a>
@@ -110,7 +110,7 @@
         </div>
 
         <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
-            <img src="assets/IMG/shrek/sherk4.jpeg" alt="sherk4" class="img-uniform mb-3 mx-auto">
+            <img src="assets/IMG/shrek/sherk4.jpeg" alt="sherk4" class="tarjeta__imagen mb-3 mx-auto">
             <h3 class="h5">nombre product</h3>
             <p class="text-mutted">$precio</p>
             <a href="#" class="btn btn-success w-100 mb-2">Comprar</a>
@@ -120,7 +120,7 @@
 
         <!--esquema tarjeta
         <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
-            <img src="" alt="" class="img-uniform mb-3">
+            <img src="" alt="" class="tarjeta__imagen mb-3">
             <h3 class="h5">nombre product</h3>
             <p class="text-mutted">$precio</p>
             <a href="#" class="btn btn-success w-100 mb-2">Comprar</a>
@@ -130,7 +130,7 @@
     </div>
 
     <!--ancla-->
-    <a href="#" id="scrollToTop" class="p-1 m-3 opacity-50 float-end boton_arriba">
+    <a href="#" id="scrollToTop" class="p-1 m-3 opacity-50 float-end boton-arriba">
     <img src="assets/IMG/arrow-up-circle.svg" alt="flecha_top" width="30" height="30" class="img-fluid">
     </a>
 
@@ -185,7 +185,7 @@
             </ul> 
         </div>
         <!--copyright, para la entrega, descripción de la pagina-->
-        <p class="text-md-center text-body-secondary texto_descipcion">Tienda enfocada en la venta de memes, siendo un meme en sí misma, generando un memeception. También forja como sátira de los NFT. Utiliza como moneda de cambio los <span class="fst-italic">"Brain coins"</span>, equivalente a espacio de almacenamiento cerebral del usuario.</p> 
+        <p class="text-md-center text-body-secondary u-texto-justificado">Tienda enfocada en la venta de memes, siendo un meme en sí misma, generando un memeception. También forja como sátira de los NFT. Utiliza como moneda de cambio los <span class="fst-italic">"Brain coins"</span>, equivalente a espacio de almacenamiento cerebral del usuario.</p> 
     </div> 
 </footer>
 

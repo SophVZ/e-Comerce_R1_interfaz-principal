@@ -1,9 +1,25 @@
-
-.bg-custom-color {
+/*Metodología aplicada: BEM*/
+/*GENERAL: bloques que se repiten en todos los html*/
+.navbar--verde {
     background-color: rgb(197, 243, 144);
 }
 
-.img-uniform {
+/*anchor*/
+.boton-arriba {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* texto justificado, clase utilitaria de BEM*/
+.u-texto-justificado {
+    text-align: justify;
+}
+
+/*INTERFAZ PRINCIPAL*/
+
+.tarjeta__imagen {
     width: 200px;
     height: 150px;
     object-fit: contain;
@@ -12,32 +28,22 @@
 }
 
 @media (max-width: 768px) {
-    .img-uniform {
+    .tarjeta__imagen {
         width: 300px;
         height: 200px;
     }
 }
 
-/* texto justificado*/
-.texto_descipcion {
-    text-align: justify;
-}
-
-.boton_arriba {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-}
-
+/*PAGES PRODUCTOS*/
 /*zoom imagen 10%*/
-.img-detalles {
+.producto__imagen {
     transition: transform 0.3s ease;
     max-height: 500px;
     object-fit: contain;
 }
 
-.img-detalles:hover {
+.producto__imagen: hover {
     transform: scale(1.2);
     cursor: zoom-in;
 }
+
