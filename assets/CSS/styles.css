@@ -42,7 +42,7 @@
     object-fit: contain;
 }
 
-.producto__imagen: hover {
+.producto__imagen:hover {
     transform: scale(1.2);
     cursor: zoom-in;
 }
