@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets\CSS\styles.css">
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
 <header>
 <!--barra de navegación y links para navegar por la página-->
     <nav class="navbar navbar-expand-sm navbar--verde">
@@ -64,33 +64,45 @@
     </nav>
 </header>
 
-<main>
+<main class="flex-grow-1  border-bottom">
 <!-- listar los productos en tarjetas, tener botones para comprar, link a carro de compras-->
-    <div class="container-fluid d-block d-md-flex flex-wrap align-items-center justify-content-md-center border-bottom mt-3">
 
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item tarjeta" data-categoria="dogos">
-            <img src="assets/IMG/dogos/dogos_chems.jpeg" alt="dogos_chems" class="tarjeta__imagen mb-3 mx-auto">
-            <h3 class="h5">Cheems</h3>
-            <p class="text-mutted">$500 brc</p>
-            <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-dogos-chems" data-product-price="500" data-product-name="Cheems">Comprar</a>
-            <a href="../pages_productos/dogos/dogos_chems.html" class="btn btn-outline-success w-100">Detalles</a>
+    <div class="container-fluid d-flex flex-wrap align-items-center justify-content-center mt-3 pb-3">
+        <div class="card border rounded shadow h-100 d-inline-block mx-1 producto-item tarjeta" data-categoria="dogos">
+            <div class="p-3 pb-0">
+                <img src="assets/IMG/dogos/dogos_chems.jpeg" alt="dogos_chems" class="tarjeta__imagen mx-auto">
+            </div>
+            <div class="card-body p-3">
+                <h5 class="card-title">Cheems</h5>
+                <p class="card-text text-mutted">$500 brc</p>
+                <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-dogos-chems" data-product-price="500" data-product-name="Cheems">Comprar</a>
+                <a href="../pages_productos/dogos/dogos_chems.html" class="btn btn-outline-success w-100">Detalles</a>
+            </div>
         </div>
-        
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item tarjeta" data-categoria="gatos">
-            <img src="assets/IMG/gatos/gato_ensalada.jpeg" alt="gato_ensalada" class="tarjeta__imagen mb-3 mx-auto">
-            <h3 class="h5">Salad Cat</h3>
-            <p class="text-mutted">$250 brc</p>
-            <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-gatos-salad" data-product-price="250" data-product-name="Salad cat">Comprar</a>
-            <a href="../pages_productos/gatos/gatos_ensalada.html" class="btn btn-outline-success w-100">Detalles</a>
+        <div class="card border rounded shadow h-100 d-inline-block mx-1 producto-item tarjeta"  data-categoria="gatos">
+            <div class="p-3 pb-0">
+                <img src="assets/IMG/gatos/gato_ensalada.jpeg" alt="gato_ensalada" class="tarjeta__imagen mx-auto">
+            </div>
+            <div class="card-body p-3">
+                <h5 class="card-title">Salad Cat</h5>
+                <p class="card-text text-mutted">$250 brc</p>
+                <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-gatos-salad" data-product-price="250" data-product-name="Salad cat">Comprar</a>
+                <a href="../pages_productos/gatos/gatos_ensalada.html" class="btn btn-outline-success w-100">Detalles</a>
+            </div>
         </div>
+        <div class="card border rounded shadow h-100 d-inline-block mx-1 producto-item tarjeta" data-categoria="birbs">
+            <div class="p-3 pb-0">
+                <img src="assets/IMG/birbs/birb_borb.jpeg" alt="birb_borb" class="tarjeta__imagen mx-auto">
+            </div>
+            <div class="card-body p-3">
+                <h5 class="card-title">Bird, birb, borb</h5>
+                <p class="card-text text-mutted">$100 brc</p>
+                <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-birbs-borb" data-product-price="100" data-product-name="Bird, birb, borb">Comprar</a>
+                <a href="../pages_productos/birbs/birb_borb.html" class="btn btn-outline-success w-100">Detalles</a>
+            </div>
+        </div>
+    </div>
 
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1 producto-item tarjeta" data-categoria="birbs">
-            <img src="assets/IMG/birbs/birb_borb.jpeg" alt="birb_borb" class="tarjeta__imagen mb-3 mx-auto">
-            <h3 class="h5">Bird, birb, borb</h3>
-            <p class="text-mutted">$100 brc</p>
-            <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-birbs-borb" data-product-price="100" data-product-name="Bird, birb, borb">Comprar</a>
-            <a href="../pages_productos/birbs/birb_borb.html" class="btn btn-outline-success w-100">Detalles</a>
-        </div>
 
         <!--
         <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
@@ -127,7 +139,7 @@
             <a href="#" class="btn btn-outline-success w-100">Detalles</a>
         </div>
         -->
-    </div>
+
 
     <!--ancla-->
     <a href="#" id="scrollToTop" class="p-1 m-3 opacity-50 float-end boton-arriba">
@@ -136,7 +148,7 @@
 
 </main>
 
-<footer>
+<footer class="mt-auto">
 <!-- footer con información de la tienda html de https://getbootstrap.com/docs/5.3/examples/footers/-->
 <!--svg logos redes sociales y bootstrap-->
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none"> 
@@ -149,34 +161,34 @@
     </svg> 
 
 <!--footer-->
-    <div class="container py-3 my-2">  
-        <div class="d-block d-md-flex flex-wrap justify-content-between align-items-center border-bottom pb-3 mb-3">
+    <div class="container py-0 mt-2">  
+        <div class="d-block d-md-flex flex-wrap justify-content-between align-items-center border-bottom py-2 pt-md-1 mb-md-1">
             <!--logo-->
             <div class="d-flex align-items-center justify-content-center justify-content-md-start w-md-auto mb-3 mb-md-0"> 
                 <img src="assets/IMG/doge.jpeg" alt="doge" width="30" height="30" class="d-inline-block align-text-top me-2">
-                <span class="mb-0 text-body-secondary">&copy; 2025, Meme Store.</span> 
+                <span class="small text-body-secondary">&copy; 2025, Meme Store.</span> 
             </div> 
             <!--menu-->
             <ul class="nav justify-content-center  w-md-auto mb-3 mb-md-0"> 
                 <li class="nav-item">
-                    <a href="#" id="scrollToTop" class="nav-link px-2 text-body-secondary">Home</a>
+                    <a href="#!" id="scrollToTop" class="nav-link px-2 text-body-secondary">Home</a>
                 </li> 
                 <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-body-secondary">Preguntas frecuentes</a></li> 
+                    <a href="#!" class="nav-link px-2 text-body-secondary">Preguntas frecuentes</a></li> 
                 <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-body-secondary">Sobre nosotros</a>
+                    <a href="#!" class="nav-link px-2 text-body-secondary">Sobre nosotros</a>
                 </li> 
             </ul> 
             <!--redes-->
             <ul class="nav align-items-center justify-content-center justify-content-md-end list-unstyled d-flex w-md-100"> 
-                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram">
+                <li class="ms-3"><a class="text-body-secondary" href="#!" aria-label="Instagram">
                     <svg class="bi" width="24" height="24" aria-hidden="true">
                         <use xlink:href="#instagram"></use>
                     </svg>
                 </a>
                 </li> 
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#" aria-label="Facebook">
+                    <a class="text-body-secondary" href="#!" aria-label="Facebook">
                         <svg class="bi" width="24" height="24">
                             <use xlink:href="#facebook"></use>
                         </svg>
@@ -185,7 +197,7 @@
             </ul> 
         </div>
         <!--copyright, para la entrega, descripción de la pagina-->
-        <p class="text-md-center text-body-secondary u-texto-justificado">Tienda enfocada en la venta de memes, siendo un meme en sí misma, generando un memeception. También forja como sátira de los NFT. Utiliza como moneda de cambio los <span class="fst-italic">"Brain coins"</span>, equivalente a espacio de almacenamiento cerebral del usuario.</p> 
+        <p class="text-md-center small text-body-secondary u-texto-justificado">Tienda enfocada en la venta de memes, siendo un meme en sí misma, generando un memeception. También forja como sátira de los NFT. Utiliza como moneda de cambio los <span class="fst-italic">"Brain coins"</span>, equivalente a espacio de almacenamiento cerebral del usuario.</p> 
     </div> 
 </footer>
 

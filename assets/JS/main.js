@@ -1,6 +1,58 @@
 
 $(document).ready(function(){
+//PRINCIPAL
+    // filtro sacado de google ia
+    $('.nav-filtro-btn').on('click', function(event){
+        event.preventDefault();
+        //categoria del enlace
+        var filtro = $(this).data('filter')
+        //oculta tarjetas
+        $('.producto-item').addClass('d-none');
+        //muestra tarjetas filtradas
+        if (filtro === 'todos') {
+            $('.producto-item').removeClass('d-none')
+        } else {
+            // selecciona elementos con la data.categoria
+            $('.producto-item[data-categoria*="' + filtro + '"]').removeClass('d-none')
+        }
+        //resalta enlace activo
+        $('.nav-filtro-btn').removeClass('active');
+        $(this).addClass('active')
+    });
 
+//GENERAL
+    //cargar navbar y footer con IA en las paginas de productos
+    /*async function cargarCompone() {
+        try {
+            const resNav = await fetch("../../interfaz_principal/includes/navbar_productos.html");
+            const navHtml = await resNav.text();
+            $("#nav-placeholder").html(navHtml);
+            
+            const resFooter = await fetch("../../interfaz_principal/includes/footer_productos.html");
+            const footerHtml = await resFooter.text();
+            $("#footer-placeholder").html(footerHtml);
+        } catch (error) {
+            console.error("Error cargando compoentes:", error);
+        }
+    }
+
+    cargarCompone();*/
+
+    //ancla al inicio
+    $(document).on('click','#scrollToTop',function(event){
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 200);
+    });
+
+    //boton volver
+    $(document).on('click','#backButton',function(event) {
+        event.preventDefault();
+        window.history.back();
+    });
+
+//CARRITO
     // agregar al carrito
     var cart = JSON.parse(localStorage.getItem('shoppingCart')) || {};
     
@@ -68,39 +120,6 @@ $(document).ready(function(){
 
     updateCartCounter();
 
-    // filtro sacado de google ia
-    $('.nav-filtro-btn').on('click', function(event){
-        event.preventDefault();
-        //categoria del enlace
-        var filtro = $(this).data('filter')
-        //oculta tarjetas
-        $('.producto-item').addClass('d-none');
-        //muestra tarjetas filtradas
-        if (filtro === 'todos') {
-            $('.producto-item').removeClass('d-none')
-        } else {
-            // selecciona elementos con la data.categoria
-            $('.producto-item[data-categoria*="' + filtro + '"]').removeClass('d-none')
-        }
-        //resalta enlace activo
-        $('.nav-filtro-btn').removeClass('active');
-        $(this).addClass('active')
-    });
-
-    //ancla al inicio
-    $('#scrollToTop').on('click',function(event){
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, 800);
-    });
-
-    //boton volver
-    $('#backButton').on('click', function(event) {
-        event.preventDefault();
-        window.history.back();
-    });
-
     //vaciar carrito
     $('#clear-cart-btn').on('click', function(){
         localStorage.removeItem('shoppingCart');
@@ -136,3 +155,6 @@ $(document).ready(function(){
     });
 
 });
+
+
+
