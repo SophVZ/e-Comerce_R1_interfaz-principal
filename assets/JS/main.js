@@ -115,7 +115,7 @@ $(document).ready(function(){
         }
         saveCart();
         updateCartCounter();
-        alert(productName + " añadido al carrito");
+        alert( '"' + productName + '" añadido al carrito.');
     });
 
     updateCartCounter();

@@ -32,18 +32,16 @@
                     <li class="nav-item">
                         <a class="nav-link nav-filtro-btn" href="#" data-filter="birbs">Birbs </a>
                     </li>
-                    <!--
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Otros
                         </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item nav-link ps-1" href="#">Camarones</a></li>
-                                <li><a class="dropdown-item nav-link ps-1" href="#">Sea doggo</a></li>
-                                <li><a class="dropdown-item nav-link ps-1" href="#">Shrek</a></li>
+                            <ul class="dropdown-menu px-1">
+                                <li><a class="dropdown-item nav-link ps-1 nav-filtro-btn" href="#" role="button" data-filter="shrimp">Shrimp</a></li>
+                                <li><a class="dropdown-item nav-link ps-1 nav-filtro-btn" href="#" role="button" data-filter="sea-dogo">Sea doggo</a></li>
+                                <li><a class="dropdown-item nav-link ps-1 nav-filtro-btn" href="#" role="button" data-filter="shrek">Shrek</a></li>
                         </ul>
                     </li>
-                    -->
                 </ul>
 <!--
                 <form class="form-inline my-2 my-sm-0">
@@ -68,6 +66,7 @@
 <!-- listar los productos en tarjetas, tener botones para comprar, link a carro de compras-->
 
     <div class="container-fluid d-flex flex-wrap align-items-center justify-content-center mt-3 pb-3">
+<!--DOGGOS-->
         <div class="card border rounded shadow h-100 d-inline-block mx-1 my-2 producto-item tarjeta" data-categoria="dogos">
             <div class="p-3 pb-0">
                 <img src="assets/IMG/dogos/dogos_chems.jpeg" alt="dogos_chems" class="tarjeta__imagen mx-auto">
@@ -79,6 +78,18 @@
                 <a href="../pages_productos/dogos/dogos_chems.html" class="btn btn-outline-success w-100">Detalles</a>
             </div>
         </div>
+        <div class="card border rounded shadow h-100 d-inline-block mx-1 my-2 producto-item tarjeta" data-categoria="dogos">
+            <div class="p-3 pb-0">
+                <img src="assets/IMG/dogos/dogos_cachorro.jpeg" alt="dogos_cachorro" class="tarjeta__imagen mx-auto">
+            </div>
+            <div class="card-body p-3">
+                <h5 class="card-title">Ugly puppy</h5>
+                <p class="card-text text-mutted">$100 brc</p>
+                <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-dogos-cachorro" data-product-price="100" data-product-name="Ugly puppy">Comprar</a>
+                <a href="../pages_productos/dogos/dogos_cachorro.html" class="btn btn-outline-success w-100">Detalles</a>
+            </div>
+        </div>
+<!--GATOS-->
         <div class="card border rounded shadow h-100 d-inline-block mx-1 my-2 producto-item tarjeta"  data-categoria="gatos">
             <div class="p-3 pb-0">
                 <img src="assets/IMG/gatos/gato_ensalada.jpeg" alt="gato_ensalada" class="tarjeta__imagen mx-auto">
@@ -90,6 +101,7 @@
                 <a href="../pages_productos/gatos/gatos_ensalada.html" class="btn btn-outline-success w-100">Detalles</a>
             </div>
         </div>
+<!--BIRB-->
         <div class="card border rounded shadow h-100 d-inline-block mx-1 my-2 producto-item tarjeta" data-categoria="birbs">
             <div class="p-3 pb-0">
                 <img src="assets/IMG/birbs/birb_borb.jpeg" alt="birb_borb" class="tarjeta__imagen mx-auto">
@@ -101,44 +113,46 @@
                 <a href="../pages_productos/birbs/birb_borb.html" class="btn btn-outline-success w-100">Detalles</a>
             </div>
         </div>
+<!--SHERK-->
+        <div class="card border rounded shadow h-100 d-inline-block mx-1 my-2 producto-item tarjeta" data-categoria="shrek">
+            <div class="p-3 pb-0">
+                <img src="assets/IMG/shrek/shrek1.jpeg" alt="shrek_shrek1" class="tarjeta__imagen mx-auto">
+            </div>
+            <div class="card-body p-3">
+                <h5 class="card-title">Shrek meh</h5>
+                <p class="card-text text-mutted">$200 brc</p>
+                <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-shrek-shrek1" data-product-price="200" data-product-name="Shrek meh">Comprar</a>
+                <a href="../pages_productos/dogos/shrek_shrek1.html" class="btn btn-outline-success w-100">Detalles</a>
+            </div>
+        </div>
+<!--SHIMP-->
+        <div class="card border rounded shadow h-100 d-inline-block mx-1 my-2 producto-item tarjeta" data-categoria="shrimp">
+            <div class="p-3 pb-0">
+                <img src="assets/IMG/shrimp/shrimp_forgiveme.jpeg" alt="shrimp_forgiveme" class="tarjeta__imagen mx-auto">
+            </div>
+            <div class="card-body p-3">
+                <h5 class="card-title">Forgive me</h5>
+                <p class="card-text text-mutted">$165 brc</p>
+                <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-shrimp-forgiveme" data-product-price="165" data-product-name="Forgive me">Comprar</a>
+                <a href="../pages_productos/dogos/shrimp_forgiveme.html" class="btn btn-outline-success w-100">Detalles</a>
+            </div>
+        </div>
+<!--SEA DOGO-->
+        <div class="card border rounded shadow h-100 d-inline-block mx-1 my-2 producto-item tarjeta" data-categoria="sea-dogo">
+            <div class="p-3 pb-0">
+                <img src="assets/IMG/sea_doggo/seadoggo_pupper.jpeg" alt="seadoggo_pupper" class="tarjeta__imagen mx-auto">
+            </div>
+            <div class="card-body p-3">
+                <h5 class="card-title">Aqua Pupper</h5>
+                <p class="card-text text-mutted">$130 brc</p>
+                <a href="#" class="btn btn-success w-100 mb-2 add-to-cart-btn" data-product-id="prod-seadoggo-pupper" data-product-price="130" data-product-name="Aqua Pupper">Comprar</a>
+                <a href="../pages_productos/dogos/seadoggo_pupper.html" class="btn btn-outline-success w-100">Detalles</a>
+            </div>
+        </div>
+
     </div>
 
 
-        <!--
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
-            <img src="assets/IMG/shrimp/shrimp_escoliosis.jpeg" alt="shrimp" class="tarjeta__imagen mb-3 mx-auto">
-            <h3 class="h5">nombre product</h3>
-            <p class="text-mutted">$precio</p>
-            <a href="#" class="btn btn-success w-100 mb-2">Comprar</a>
-            <a href="#" class="btn btn-outline-success w-100">Detalles</a>
-        </div>
-
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
-            <img src="assets/IMG/sea_doggo/seadoggo_o-o.jpeg" alt="seadoggo_o-o" class="tarjeta__imagen mb-3 mx-auto">
-            <h3 class="h5">nombre product</h3>
-            <p class="text-mutted">$precio</p>
-            <a href="#" class="btn btn-success w-100 mb-2">Comprar</a>
-            <a href="#" class="btn btn-outline-success w-100">Detalles</a>
-        </div>
-
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
-            <img src="assets/IMG/shrek/sherk4.jpeg" alt="sherk4" class="tarjeta__imagen mb-3 mx-auto">
-            <h3 class="h5">nombre product</h3>
-            <p class="text-mutted">$precio</p>
-            <a href="#" class="btn btn-success w-100 mb-2">Comprar</a>
-            <a href="#" class="btn btn-outline-success w-100">Detalles</a>
-        </div>
-        -->
-
-        <!--esquema tarjeta
-        <div class="p-3 border rounded shadow h-100 mb-3 mx-1">
-            <img src="" alt="" class="tarjeta__imagen mb-3">
-            <h3 class="h5">nombre product</h3>
-            <p class="text-mutted">$precio</p>
-            <a href="#" class="btn btn-success w-100 mb-2">Comprar</a>
-            <a href="#" class="btn btn-outline-success w-100">Detalles</a>
-        </div>
-        -->
 
 
     <!--ancla-->
@@ -171,7 +185,7 @@
             <!--menu-->
             <ul class="nav justify-content-center  w-md-auto mb-1 mb-md-0"> 
                 <li class="nav-item">
-                    <a href="#!" id="scrollToTop" class="nav-link px-2 text-body-secondary">Home</a>
+                    <a href="#" id="scrollToTop" data-filter="todos" class="nav-link px-2 nav-filtro-btn active text-body-secondary">Home</a>
                 </li> 
                 <li class="nav-item">
                     <a href="#!" class="nav-link px-2 text-body-secondary">Preguntas frecuentes</a></li> 

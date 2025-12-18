@@ -19,6 +19,10 @@
 
 /*INTERFAZ PRINCIPAL*/
 
+.tarjeta {
+    padding: 0.5% 0.2% 0.5% 0.2%;
+}
+
 .tarjeta__imagen {
     width: 200px;
     height: 150px;
